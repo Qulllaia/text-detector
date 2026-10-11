@@ -1,0 +1,25 @@
+{
+  "name": "text-detector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tsx init.ts",
+    "test_file": "npx tsx"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.1",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "fs": "0.0.1-security",
+    "tfjs-vis": "0.0.1-security",
+    "typescript": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5"
+  }
+}
