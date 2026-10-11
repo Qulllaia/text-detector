@@ -38,8 +38,12 @@ model.add(
 ```
 
 В результате картинка
+
+<br/>
 <img src='../test_images/1.jpg'>
 После выполнения CNN.ts мы получаем:
+
+<br/>
 <img src='../tests/grid.png'>
 набор квадратов с каждым слоем, к которому был применён фильтр
 
@@ -53,11 +57,15 @@ model.add(
 
 Та, часть, что касается слоя ReLU демонстрируется ниже:
 активация lineral:
+
+<br/>
 <img src="../tests/grid_before_relu.png">
 Заметно, что изменения в гриде происходят цветам, т.е. положительным или отрицательным значениям
 Именно поэтому у каналов такие разные фоны: у одних среднее ближе к нулю, у других сдвинуто в плюс, у третьих в минус.
 
 После ReLu мы наблюдаем:
+
+<br/>
 <img src="../tests/grid_after_relu.png">
 Все отрицательные значения стали нулями. Поэтому:
 
@@ -178,7 +186,8 @@ ReLU реагирует не на «яркость», а на направлен
 ```
 
 Выглядит это так:
-<img src="../conv_demo/input.png">
+<br/>
+<img src="../conv_demo/input.png" style="width:200px; image-rendering:pixelated;">
 
 Ядром у нас является следующий паттерн:
 
@@ -224,9 +233,12 @@ ReLU реагирует не на «яркость», а на направлен
 ```
 
 Визуально выглядит так:
-<img src="../conv_demo/before_relu.png">
+<br/>
+<img src="../conv_demo/before_relu.png" style="width:200px; image-rendering:pixelated;">
+
 После ReLU выглядит так:
-<img src="../conv_demo/after_relu.png">
+<br/>
+<img src="../conv_demo/after_relu.png" style="width:200px; image-rendering:pixelated;">
 
 Т.е. по факты мы нашли соответствие паттерну:
 слева темно, справа ярко
