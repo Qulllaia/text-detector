@@ -3,7 +3,7 @@ import * as fs from "fs";
 
 export async function saveAsGrid(
   activations: tf.Tensor4D,
-  outputPath: string = "../tests/grid.png",
+  outputPath: string = "./tests/grid.png",
 ): Promise<void> {
   const squeezed = activations.squeeze([0]) as tf.Tensor3D;
   const [H, W, C] = squeezed.shape as [number, number, number];
